@@ -2,20 +2,20 @@
    - Páginas: primero internet (siempre la última versión); sin conexión, la guardada.
    - Fotos, íconos y estilos: se guardan para que abra rápido.
    - Los datos (Google Apps Script) nunca se guardan acá: siempre van en vivo. */
-const VERSION = '2026-11-03-1';
+const VERSION = '2026-11-15-1';
 const CACHE = 'lld-' + VERSION;
 const BASE = [
   './', './index.html', './config.js', './manifest.webmanifest',
-  './panel/', './panel/index.html', './panel/manifest.webmanifest',
-  './icons/icon-192.png', './icons/favicon.svg', './panel/icons/icon-192.png',
-  './fotos/aviador_marron.webp',
-  './fotos/clubmaster.webp',
-  './fotos/redondo_carey.webp',
-  './fotos/aviador_azul.webp',
-  './fotos/carey_oro.webp',
-  './fotos/clubmaster_receta.webp',
-  './fotos/corazon.webp',
-  './fotos/negros.webp',
+  './panel.html', './panel.webmanifest',
+  './icon-192.png', './favicon.svg', './panel-icon-192.png',
+  './aviador_marron.webp',
+  './clubmaster.webp',
+  './redondo_carey.webp',
+  './aviador_azul.webp',
+  './carey_oro.webp',
+  './clubmaster_receta.webp',
+  './corazon.webp',
+  './negros.webp',
 ];
 
 self.addEventListener('install', e => {
